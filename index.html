@@ -13,7 +13,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!--     Fonts and icons     -->
   <script src="https://kit.fontawesome.com/0e1fa7c1a3.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -22,7 +22,7 @@
       padding: 40px;
       font-family: "arial", heletica, sans-serif;
       font-size: 24px;
-      background: white url('./23985188_6897946.jpg');
+      background: white url('./6193485\ \(1\).jpg');
       background-repeat: no-repeat;
       background-size: cover;
       -webkit-animation: 20s linear 0s normal none infinite animate;
@@ -85,7 +85,7 @@
       width: 100%;
       margin-left: 0px;
       font-size: 1.8vw;
-      color: #B8860B;
+      color: #fff;
     }
 
     .card-table tbody {
@@ -94,20 +94,21 @@
     }
 
     .card-table tr {
-      background-color: #f9f9f9;
+      /* background-color: #f9f9f9; */
+      background: rgba(255,255,255,0.3);
       /* Light gray background for odd rows */
     }
 
     .card-table tbody tr:nth-child(even) {
-      background-color: #e6e6e6;
+      /* background-color: #e6e6e6; */
+      background: rgba(245,245,245,0.3);
       /* Dark gray background for even rows */
     }
 
 
-
     .card-table th {
-      background-color: #B8860B;
-      color: white;
+      background-color: #696969;
+      color: #DAA520;
     }
 
     /* .card-table tbody td {} */
@@ -120,6 +121,7 @@
 
     .card-table td {
       font-weight: bold;
+      color: #fff;
     }
 
     .silver-table td {
@@ -128,8 +130,8 @@
 
     /* Hover effect for better user experience */
     .card-table tbody tr:hover {
-      background-color: #B8860B
-      /* Lighter gray on hover */
+      background-color: #696969
+        /* Lighter gray on hover */
     }
 
     .date-time {
@@ -240,8 +242,8 @@
       padding: 5px;
       flex-direction: column;
       align-items: center;
-      background-color: #B8860B;
-      color: white;
+      background-color: #696969;
+      color: #DAA520;
     }
 
     .news-card .news-label h3 {
@@ -339,7 +341,7 @@
       text-align: center;
       border-radius: 5px;
       margin: 0 auto;
-      
+
     }
 
     #clock {
@@ -489,7 +491,7 @@
     </div>
 
 
-    
+
 
 
 
@@ -550,7 +552,7 @@
 
   <script>
     function startTime() {
-      function updateTime() { 
+      function updateTime() {
         var today = new Date();
         var hr = today.getHours();
         var min = today.getMinutes();
@@ -563,7 +565,7 @@
         min = checkTime(min);
         // sec = checkTime(sec);
         // + ":" + sec
-        document.getElementById("clock").innerHTML = hr + ":" + min  + " " + ap;
+        document.getElementById("clock").innerHTML = hr + ":" + min + " " + ap;
 
         var months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
         var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
