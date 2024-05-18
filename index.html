@@ -94,13 +94,13 @@
     }
 
     .card-table tr {
-      background-color: #C0C0C0;
+      background-color: #999999;
       /* background: rgba(255,255,255,0.3); */
       /* Light gray background for odd rows */
     }
 
     .card-table tbody tr:nth-child(even) {
-      background-color: #A9A9A9;
+      background-color: #757575;
       /* background: rgba(245,245,245,0.3); */
       /* Dark gray background for even rows */
     }
@@ -382,7 +382,7 @@
           <div id="date"></div>
         </div>
       </div>
-      <div class="mt-5" style="background-color: #696969; opacity: 70%; padding: 60px;">
+      <div style="background-color: #696969; padding: 50px; margin-top: 125px;">
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
@@ -391,32 +391,20 @@
               {
                 "symbol": "FXOPEN:XAUUSD",
                   "width": "100%",
-                    "height": "400",
+                    "height": "500",
                       "locale": "en",
-                        "dateRange": "1M",
-                          "colorTheme": "light",
+                        "dateRange": "12M",
+                          "colorTheme": "dark",
                             "trendLineColor": "rgba(255, 255, 255, 1)",
                               "underLineColor": "rgba(255, 255, 255, 1)",
                                 "underLineBottomColor": "rgba(255, 255, 255, 0)",
                                   "isTransparent": true,
                                     "autosize": true,
-                                      "largeChartUrl": "",
-                                        "chartOnly": true
+                                      "largeChartUrl": ""
               }
             </script>
         </div>
         <!-- TradingView Widget END -->
-        <!-- TradingView Widget END -->
-      </div>
-      <div class="news-card" style="margin-top: 90px;">
-        <div class="news-label">
-          <h3>ROYAL VISTA</h3>
-          <p>Latest News</p>
-        </div>
-        <div class="news">
-          <!-- Display News Here -->
-          <marquee behavior="scrolling" direction="left" id="displayNews">-</marquee>
-        </div>
       </div>
     </div>
 
@@ -522,6 +510,16 @@
     </div>
   </div>
 
+  <div class="news-card" style="margin-top: 40px; width: 97.4%; margin-left: 30px;">
+    <div class="news-label">
+      <h3>ROYAL VISTA</h3>
+      <p>Latest News</p>
+    </div>
+    <div class="news">
+      <!-- Display News Here -->
+      <marquee behavior="scrolling" direction="left" id="displayNews">-</marquee>
+    </div>
+  </div>
 
   <div class="rate-card">
     <div class="col-lg-3">
