@@ -19,7 +19,7 @@
 
     body {
       margin: 0;
-      padding: 0px 40px;
+      padding: 0px 20px;
       font-family: "arial", heletica, sans-serif;
       font-size: 24px;
       background: white url('./elegant-white-abstract-background.jpg');
@@ -30,7 +30,6 @@
       -ms-animation: 20s linear 0s normal none infinite animate;
       -o-animation: 20s linear 0s normal none infinite animate;
       animation: 20s linear 0s normal none infinite animate;
-      color: #005043;
       height: 100vh;
     }
 
@@ -232,13 +231,14 @@
       flex-direction: row;
       background-color: #fff;
       opacity: 80%;
-      height: 70px;
+      height: 50px;
       width: 100%;
+      border: 2px solid #B8860B;
     }
 
     .news-card .news-label {
       display: flex;
-      width: 500px;
+      width: 300px;
       padding: 5px;
       flex-direction: column;
       align-items: center;
@@ -268,7 +268,6 @@
     .calendar {
       position: relative;
       width: 100%;
-
     }
 
     .calendar:before {
@@ -386,7 +385,7 @@
         </div>
       </div>
       <div>
-        <div class="card-table d-block mt-3">
+        <div class="card-table d-block" style="margin-top: 75px;">
           <table>
             <thead style="margin-bottom: 0px;">
               <tr>
@@ -416,21 +415,18 @@
     </div>
 
     <div class="col-lg-6" style="display: flex; flex-direction: column;">
-      <div class=" gold-silver gold d-block">
-        <!-- GOLD -->
-        <!-- <div class="label"
-          style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white;">
-          <p>Gold</p>
-          <h5>oz</h5>
-        </div> -->
-        <div class="d-flex mt-2" style="justify-content:space-around; background-color: rgba(255, 255, 255, 0.4);">
-          <div style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white; margin-left: -79px; padding: 0px 20px; width: 125px;">
-            <p>Gold</p>
+
+      <!-- GOLD -->
+      <div class="gold-silver" style="display: flex; flex-direction: column;">
+        <div
+          style="display: flex; flex-direction: row; justify-content: space-between; background-color: rgba(255, 255, 255, 0.4); border: 2px solid #B8860B;">
+          <div
+            style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white; padding: 0px 20px; width: 125px;">
+            <p style="font-weight: 600;">Gold</p>
             <h5>oz</h5>
           </div>
-          <div class="buy">
+          <div class="buy" style="padding: 10px;">
             <div class="buy-label">
-
               <p>BID</p>
               <div
                 style="background-color: #B8860B;height: 32px;width: 32px;border: none;border-radius: 50%;  display: flex;justify-content: center;align-items: center;">
@@ -442,9 +438,8 @@
               id="lowLabelGold">0</label>
           </div>
 
-          <div class="sell">
+          <div class="sell" style="padding: 10px;">
             <div class="sell-label">
-
               <p>ASK</p>
               <div
                 style="background-color: #B8860B;height: 32px;width: 32px; border: none;border-radius: 50%;  display: flex;justify-content: center;align-items: center;">
@@ -457,21 +452,16 @@
           </div>
         </div>
 
-        <!-- silver -->
-        <!-- <div class=" label mt-4"
-          style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white;">
-          <p>Silver</p>
-          <h5>oz</h5>
-        </div> -->
-        <div class="d-flex mt-2" style="justify-content:space-around; background-color: rgba(255, 255, 255, 0.4);">
+        <!-- SILVER -->
+        <div class="mt-3"
+          style="display: flex; flex-direction: row; justify-content: space-between; background-color: rgba(255, 255, 255, 0.4); border: 2px solid #B8860B;">
           <div
-            style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white; margin-left: -80px; padding: 0px 20px; width: 125px;">
+            style="display: flex;justify-content: center;align-items: center;background-color: #B8860B;color: white; padding: 0px 20px; width: 125px;">
             <p>Silver</p>
             <h5>oz</h5>
           </div>
-          <div class="buy">
+          <div class="buy" style="padding: 10px;">
             <div class="buy-label">
-
               <p>BID</p>
               <div
                 style="background-color: #B8860B;height: 32px;width: 32px;  border: none;border-radius: 50%;display: flex;justify-content: center;align-items: center;">
@@ -482,9 +472,8 @@
             <label class="badge badge-success label-low mt-1" style="width: 100px; font-size:24px;"
               id="lowLabelSilver">0</label>
           </div>
-          <div class="sell">
+          <div class="sell" style="padding: 10px;">
             <div class="sell-label">
-
               <p>ASK</p>
               <div
                 style="background-color: #B8860B;height: 32px;width: 32px; border: none;border-radius: 50%;display: flex;justify-content: center;align-items: center;">
@@ -498,14 +487,14 @@
         </div>
       </div>
       <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container" style="margin-top: 10px;">
+      <div class="tradingview-widget-container" style="margin: 0px 20px 0px 20px;">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript"
           src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
             {
               "symbol": "FXOPEN:XAUUSD",
-                "width": "100%",
-                  "height": "230",
+                "width": "95%",
+                  "height": "250",
                     "locale": "en",
                       "dateRange": "12M",
                         "colorTheme": "dark",
@@ -520,7 +509,7 @@
     </div>
   </div>
 
-  <div class="news-card" style="margin-top: 40px; width: 97.4%; margin-left: 30px;">
+  <div class="news-card" style="margin-top: 20px; width: 95%; margin-left: 30px;">
     <div class="news-label">
       <h3>ROYAL VISTA</h3>
       <p>Latest News</p>
